@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mes liens</title>
+  <style>
+    /* Reset minimal */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #0f172a 0%, #071033 60%, #041226 100%);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Card */
+    .container{
+      width:100%;
+      max-width:420px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-radius:18px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      text-align:center;
+      backdrop-filter: blur(6px);
+    }
+
+    /* Avatar / brand */
+    .avatar{
+      width:92px;height:92px;border-radius:50%;
+      margin:0 auto 14px;
+      display:flex;align-items:center;justify-content:center;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,0.06);
+      font-size:44px;
+      box-shadow: 0 6px 20px rgba(4,11,40,0.6);
+    }
+    h1{
+      font-size:20px;
+      font-weight:700;
+      margin-bottom:6px;
+      letter-spacing:0.2px;
+    }
+    p.subtitle{
+      font-size:13px;
+      color:rgba(255,255,255,0.7);
+      margin-bottom:18px;
+    }
+
+    /* Buttons column */
+    .links{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-top:6px;
+    }
+
+    .btn{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:center;
+      padding:14px 16px;
+      border-radius:12px;
+      text-decoration:none;
+      color:#041226;
+      font-weight:700;
+      background: linear-gradient(90deg, #ffdd57 0%, #ffb84d 100%);
+      box-shadow: 0 6px 18px rgba(255,184,77,0.18);
+      transition: transform .14s ease, box-shadow .14s ease, filter .14s ease;
+      border: 1px solid rgba(0,0,0,0.08);
+      white-space:nowrap;
+    }
+
+    .btn.secondary{
+      background: linear-gradient(90deg,#8ec5ff 0%,#5dd4ff 100%);
+      color:#041226;
+      box-shadow: 0 6px 18px rgba(93,212,255,0.12);
+    }
+
+    .btn.ghost{
+      background: rgba(255,255,255,0.03);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: none;
+      font-weight:600;
+    }
+
+    .btn:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(2,6,23,0.6);
+      filter: brightness(1.02);
+    }
+
+    .btn .label{
+      font-size:15px;
+      line-height:1;
+      display:inline-block;
+    }
+
+    .small{
+      font-size:12px;
+      color:rgba(4,18,38,0.9);
+      opacity:0.9;
+      margin-left:6px;
+      font-weight:600;
+    }
+
+    /* footer */
+    .footer{
+      margin-top:18px;
+      font-size:12px;
+      color:rgba(255,255,255,0.55);
+    }
+
+    /* responsive */
+    @media (max-width:420px){
+      .container{padding:20px;border-radius:14px}
+      .avatar{width:80px;height:80px;font-size:38px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="page-title">
+    <div class="avatar" aria-hidden="true">🦁</div>
+    <h1 id="page-title">Mes liens rapides</h1>
+    <p class="subtitle">Retrouve mes groupes Telegram — clique pour rejoindre</p>
+
+    <nav class="links" aria-label="Liens importants">
+      <!-- Bouton 1 -->
+      <a class="btn" href="https://t.me/+AkTGxs4O7OMxZTY8" target="_blank" rel="noopener noreferrer">
+        <span class="label">Les cinquante 🦁</span>
+        <span class="small">→</span>
+      </a>
+
+      <!-- Bouton 2 -->
+      <a class="btn secondary" href="https://t.me/+Zdoi2MqazMI4NThk" target="_blank" rel="noopener noreferrer">
+        <span class="label">La villa des cœurs brisés 💔</span>
+        <span class="small">→</span>
+      </a>
+
+      <!-- Bouton 3 -->
+      <a class="btn ghost" href="https://t.me/+4sey3fSkPNBiZTY0" target="_blank" rel="noopener noreferrer">
+        <span class="label">JLC FAMILY</span>
+        <span class="small">→</span>
+      </a>
+    </nav>
+
+    <div class="footer" aria-hidden="false">
+      <div> made <code style="background:rgba(255,255,255,0.04);padding:4px 8px;border-radius:6px;color:#fff;font-weight:700">by owner</code></div>
+    </div>
+  </main>
+</body>
+</html>
